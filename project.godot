@@ -10,7 +10,8 @@ config_version=5
 
 [application]
 
-config/name="Platformer Game"
+config/name="Card Game"
+run/main_scene="uid://cluyc22bda4y5"
 config/features=PackedStringArray("4.7", "GL Compatibility")
 config/icon="res://icon.svg"
 
@@ -18,6 +19,7 @@ config/icon="res://icon.svg"
 
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+window/vsync/vsync_mode=0
 
 [editor_plugins]
 
@@ -30,5 +32,4 @@ enabled=PackedStringArray("res://addons/godot_super-wakatime/plugin.cfg")
 [rendering]
 
 rendering_device/driver.windows="d3d12"
-renderer/rendering_method="gl_compatibility"
-renderer/rendering_method.mobile="gl_compatibility"
+renderer/rendering_method.mobile="forward_plus"
